@@ -4,13 +4,15 @@ meme_dict = {
             'GG': 'Tanggapan terhadap sesuatu yang keren',
             'NT': 'Tanggapan atas kegagalan menang main game'
             }
-            
-            
-word = input("Ketik kata yang tidak Kamu mengerti (gunakan huruf kapital semua!): ")
 
-if word in meme_dict.keys():
-    # Apa yang harus kita lakukan jika kata itu ditemukan?
-    print(meme_dict[word])
-else:
-    # Apa yang harus kita lakukan jika kata itu 
-    print('KATA TERSEBUT TIDAK VALID')
+
+while True:
+            word = input("Ketik kata yang tidak Kamu mengerti (gunakan huruf kapital semua!): ")
+            
+            if word in meme_dict.keys():
+                # Apa yang harus kita lakukan jika kata itu ditemukan?
+                print(meme_dict[word])
+                break        
+            else:
+                # Apa yang harus kita lakukan jika kata itu 
+                print('KATA TERSEBUT TIDAK VALID')
